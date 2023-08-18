@@ -32,3 +32,17 @@ document.getElementById('Rectangle_btn').addEventListener('click', function () {
     const Rectangle = RectangleWith * RectangleLength;
     AreaSet('Rectangle_display', Rectangle);
 })
+//3 Parallelogram
+document.getElementById('Parallelogram_btn').addEventListener('click', function () {
+    const Parallelogram_base = GetUserValueInputField('Parallelogram_b');
+    const Parallelogram_Height = GetUserValueInputField('Parallelogram_h');
+    const Parallelogram = Parallelogram_base * Parallelogram_Height;
+    AreaSet('Parallelogram_display', Parallelogram);
+})
+//Ellipse 
+document.getElementById('Ellipse_btn').addEventListener('click', function () {
+    const Ellipse_fist = GetUserValueInputField('Ellipse_first_redius');
+    const Ellipse_secent = GetUserValueInputField('Ellipse_Secent_redius')
+    const Ellipse = 3.14 * Ellipse_fist * Ellipse_secent;
+    AreaSet('Ellipse_display', Ellipse);
+})
